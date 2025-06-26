@@ -1,0 +1,18 @@
+/* Filename - App.css*/
+.Table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(46, 83, 147);
+    width: 100% !important;
+}
+
+
+th,td {
+    border: 1px solid black;
+    font-size: 1.8rem;
+    border-style: dotted;
+}
+
+
+
