@@ -2,7 +2,7 @@ import { FaArrowDown } from 'react-icons/fa';
 import '../mandatory_public_disclosure/table.css';
 const data = [
     { info: "COPIES OF AFFILIATION/ UPGRADATION LETTER AND RECENT EXTENSION OF AFFILIATION, IF ANY", details: "https://holykrishnascollege.com/mpd/CBSE_AFFILIATION.pdf" },
-    { info: "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",  details: "https://holykrishnascollege.com/mpd/SOCITIES_RENEWAL_CERTIFICATE.pdf" },
+    { info: "COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE, AS APPLICABLE",  details: "https://holykrishnascollege.com/mpd/SOCIETIES_RENEWAL_CERTIFICATE.pdf" },
     { info: "COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S RENEWAL IF APPLICABLE*",  details: "https://holykrishnascollege.com/mpd/RECOGNITION_CERTIFICATE_RTE.pdf" },
     { info: "COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE",  details: "https://holykrishnascollege.com/mpd/BUILDING_SAFETY_CERTIFICATE.pdf" },
     { info: "COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY",  details: "https://holykrishnascollege.com/mpd/FIRE_SAFETY_CERTIFICATE.pdf" },

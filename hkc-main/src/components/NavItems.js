@@ -135,14 +135,6 @@ export const NavItems = [
         onClick:"{()=>setMenuIcon(false)}",
         subMenu:[]
     },
-    {
-        id:8,
-        title:"Downloads",
-        path:"/downloads",
-        cName:"navbar-link",
-        onClick:"{()=>setMenuIcon(false)}",
-        subMenu:[]
-    }
 ]
 
 export const AboutUs=[

@@ -6,7 +6,7 @@ import { NavItems } from "./NavItems";
 function Navbar() {
   const [menuIcon, setMenuIcon] = useState(false);
   return (
-    <Nav>
+    <Nav className="navbar_section">
       <div className={menuIcon ? "navbar active" : "navbar"}>
         <ul className="navbar-list">
           {NavItems.map((item) => {
@@ -22,27 +22,6 @@ function Navbar() {
               </li>
             );
           })}
-          {/* <li>
-                      <NavLink  className='navbar-link' onClick={()=>setMenuIcon(false)} to="/">Home</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/about">About Us</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/facilities">Facilities</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/learning">Learning</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/admission">Admission</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/photogallery">PhotoGallery</NavLink>
-                  </li>
-                  <li>
-                      <NavLink className='navbar-link' onClick={()=>setMenuIcon(false)} to="/contact">Contact Us</NavLink>
-                  </li> */}
         </ul>
         <div className="mobile-navbar-btn">
           <CgMenu
@@ -82,6 +61,7 @@ const Nav = styled.section`
         color: ${({ theme }) => theme.colors.helper};
       }
     }
+     
     .cart-icon--link {
       position: relative;
 

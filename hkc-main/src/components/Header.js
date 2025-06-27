@@ -6,31 +6,40 @@ import styled from 'styled-components';
 function Header() {
     return (
         <MainHeader>
-            <NavLink to="/">
-                <div className='header'>
-                    <img src="./images/schoolLogo.png" alt="schoolLogo"/>
-                    <h3>HOLY KRISHNA'S COLLEGE</h3>
-                </div>
-            </NavLink>
-            <Navbar/>
+            <div className='header'>
+                <NavLink to={"/"}>
+                    <div className='header_child1'>
+                        <img src="./images/schoolLogo.png"  alt="schoolLogo"/>
+                        <h3>HOLY KRISHNA'S COLLEGE</h3>
+                    </div>
+                </NavLink>
+            </div>
+            <div className='navbar_section'>
+                <Navbar/>
+            </div>
         </MainHeader>
         
       )
     }
     const MainHeader = styled.section` 
         padding:0 4.8rem;
-        height:10rem;
+        height:15rem;
         background-color:${({theme})=>theme.colors.footer_bg};
         display:flex;
-        justify-content:space-between;
+        flex-direction:column;
         align-items:center;
+        justify-items:center;
         position:fixed;
         top:0;
         width:100%;
         z-index:100; 
+        .navbar_section{
+            padding-top:5px;
+            padding-bottom:5px;
+        }
         h3{
             color:white;
-            font-size:2rem;
+            font-size:5rem;
             font-weight:400;
             
         }
@@ -49,11 +58,12 @@ function Header() {
                     height:10rem;
                     object-fit: contain;
                     margin-left:-1rem;
-                    
                 }
         }
         .header{
             display:flex;
+            width:75%;
+            margin:auto;
             justify-content:center;
             align-items:center;
             img{
@@ -62,6 +72,19 @@ function Header() {
                 object-fit: contain;
                 
             }
+        }
+        .header_child1{
+            display:flex;
+            justify-content:start;
+            align-items:center;
+            gap:2rem;
+        }
+        .header_child1 img{
+            border-right:2px solid white;
+        }
+        .header_child2{
+            color:white;
+            font-size:2rem;
         }
       
     `;

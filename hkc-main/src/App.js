@@ -56,7 +56,7 @@ function App() {
         <Route path="/about_campus" element={<About_Campus/>} />
         <Route path="/about_vision" element={<About_Vision_Misson/>} />
         <Route path="/about_principal" element={<About_Princiapl/>} />
-        <Route path="/downloads" element={<Downloads/>} />
+        <Route path="/mandatory_public_disclosure" element={<Downloads/>} />
       </Routes>
       <GoToTop/>
       <Footer></Footer>

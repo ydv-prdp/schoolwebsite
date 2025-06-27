@@ -89,7 +89,6 @@ function Downloads(){
           display:flex;
           align-items:center;
           justify-content:space-between;
-          border:1px solid black;
         }
           .box2{
             border:1px solid black;

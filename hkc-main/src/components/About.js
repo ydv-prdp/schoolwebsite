@@ -5,6 +5,8 @@ import About_Campus from './About_Campus'
 import About_Intro from './About_Intro'
 import About_Princiapl from './About_Princiapl'
 import About_Vision_Misson from './About_Vision_Misson'
+import Downloads from './Downloads'
+import { NavLink } from 'react-router-dom'
 
 function About() {
   const [active, setActive] = useState("Introduction")
@@ -20,6 +22,7 @@ function About() {
               {active === "Vision" && <About_Vision_Misson/>}
               {active === "Principal" && <About_Princiapl/>}
               {active === "About" && <About_About/>}
+              
             </div>
             
             <div className='nav'>
@@ -30,6 +33,11 @@ function About() {
               <button onClick={()=>setActive("Principal")}>From Principal's Desk</button>
               <button onClick={()=>setActive("Vision")}>Vision & Mission</button>
               <button onClick={()=>setActive("Campus")}>Campus</button>
+              <NavLink to="/mandatory_public_disclosure">
+                <button>
+                  Mandatory Public Disclosure
+                </button>
+               </NavLink>
               </div>
             </div>
          </div>
